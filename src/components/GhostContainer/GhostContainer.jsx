@@ -1,6 +1,8 @@
 import React from 'react';
 import './GhostContainer.css'
 import CardDisplay from "./InnerComponents/CardDisplay/CardDisplay";
+import ghostWriting from '../../images/evidence-icons/SVGs/ghost-writing.svg'
+
 
 export default function GhostContainer(props){
 
@@ -29,6 +31,7 @@ export default function GhostContainer(props){
     return(
         <div className={"possibility-container"}>
             <h2>{props.message}</h2>
+            <img src={ghostWriting} />
             <h3>(ghosts cannot be visually recognized)</h3>
 
             <CardDisplay

@@ -1,0 +1,5 @@
+.card-icon {
+    z-index: 1;
+    display: inline !important;
+    fill: #000000;
+}

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fc4c6c6-d286-4c09-a916-c9475d430cc7" name="Default Changelist" comment="Add better structure for ghostcard">
-      <change afterPath="$PROJECT_DIR$/src/components/GhostContainer/InnerComponents/CardDisplay/CardDisplay.jsx" afterDir="false" />
+    <list default="true" id="2fc4c6c6-d286-4c09-a916-c9475d430cc7" name="Default Changelist" comment="Add new scheme of card rendering">
+      <change afterPath="$PROJECT_DIR$/src/components/GhostContainer/InnerComponents/EvidenceIconRow/EvidenceIconRow.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GhostContainer/InnerComponents/EvidenceIconRow/EvidenceRowIcon.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GhostContainer/GhostContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GhostContainer/GhostContainer.jsx" afterDir="false" />
@@ -130,7 +131,7 @@
       <workItem from="1608826845508" duration="267000" />
       <workItem from="1608828301151" duration="1287000" />
       <workItem from="1609249125076" duration="1325000" />
-      <workItem from="1609268744062" duration="2110000" />
+      <workItem from="1609268744062" duration="6722000" />
     </task>
     <task id="LOCAL-00001" summary="Creating first structure">
       <created>1607815491323</created>
@@ -391,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609250420630</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add new scheme of card rendering">
+      <created>1609271082297</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1609271082298</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +419,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add working outcomeChecker" />
     <MESSAGE value="Fix possibilities" />
     <MESSAGE value="Refactor outcomeChecker.js, fix event.target.values being cast as strings" />
     <MESSAGE value="Refactor outcomeChecker" />
@@ -436,6 +443,7 @@
     <MESSAGE value="Add backbones for the layout update" />
     <MESSAGE value="Start refactor for ghost display" />
     <MESSAGE value="Add better structure for ghostcard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add better structure for ghostcard" />
+    <MESSAGE value="Add new scheme of card rendering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new scheme of card rendering" />
   </component>
 </project>

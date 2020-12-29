@@ -1,6 +1,8 @@
 import React from 'react';
 import './GhostCard.css';
 
+import EvidenceIconRow from "../EvidenceIconRow/EvidenceIconRow";
+
 // Ghost Pictures
 import spirit from '../../../../images/ghosts/0.png';
 import wraith from '../../../../images/ghosts/1.png';
@@ -14,14 +16,6 @@ import poltergeist from '../../../../images/ghosts/8.png';
 import revenant from '../../../../images/ghosts/9.png';
 import shade from '../../../../images/ghosts/10.png';
 import yurei from '../../../../images/ghosts/11.png';
-
-// Evidence Icons
-import spiritBox from '../../../../images/evidence-icons/SVGs/spirit-box.svg';
-import ghostOrb from '../../../../images/evidence-icons/SVGs/ghost-orbs.svg';
-import ghostWriting from '../../../../images/evidence-icons/SVGs/ghost-writing.svg';
-import fingerprints from '../../../../images/evidence-icons/SVGs/fingerprints.svg';
-import freezing from '../../../../images/evidence-icons/SVGs/freezing-temperatures.svg';
-import emf from '../../../../images/evidence-icons/SVGs/emf.svg';
 
 export default function GhostCard(props){
     const ghostPictures = [
@@ -39,41 +33,8 @@ export default function GhostCard(props){
         {yurei}
     ];
 
-    const evidence = [
-        {
-            id: 0,
-            icon: {emf}
-        },
-        {
-            id: 1,
-            icon: {fingerprints}
-        },
-        {
-            id: 2,
-            icon: {freezing}
-        },
-        {
-            id: 3,
-            icon: {ghostOrb}
-        },
-        {
-            id: 4,
-            icon: {ghostWriting}
-        },
-        {
-            id: 5,
-            icon: {spiritBox}
-        }
-    ]
-
     const targetPicture = ghostPictures[props.ghost.id];
-    const targetSubstring = props.ghost.type.toLowerCase();
-
-    const targetEvidence = evidence.map((evidence) => {
-        return props.ghost.evidence.includes(evidence.id) ? evidence.icon : null
-    });
-
-    console.log(targetEvidence)
+    const targetPictureSubstring = props.ghost.type.toLowerCase();
 
     return(
         <div className={props.cardType}>
@@ -81,11 +42,12 @@ export default function GhostCard(props){
                 {props.ghost.type}
             </div>
             <div className={"ghost-picture"}>
-                <img src={targetPicture[targetSubstring]} alt={props.ghost.type} />
+                <img
+                    src={targetPicture[targetPictureSubstring]}
+                    alt={props.ghost.type}
+                />
             </div>
-            <div className={"evidence-icon-row"}>
-                <img src={targetEvidence} />
-            </div>
+            <EvidenceIconRow ghostEvidence={props.ghost.evidence} />
         </div>
     )
 }
