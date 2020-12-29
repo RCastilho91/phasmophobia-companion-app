@@ -1,37 +1,41 @@
 import React from 'react';
 import './GhostContainer.css'
-
-import GhostCard from "./InnerComponents/GhostCard/GhostCard";
+import CardDisplay from "./InnerComponents/CardDisplay/CardDisplay";
 
 export default function GhostContainer(props){
-    const possibleCards = props.ghosts.filter((ghost) => {
-        return <GhostCard {...ghost} />
+
+    // Detail filters
+    const possibleDetails = props.ghosts.filter((ghost) => {
+        return props.possibleGhosts.includes(ghost.id);
+    });
+    const eliminatedDetails = props.ghosts.filter((ghost) => {
+        return props.negativeGhosts.includes(ghost.id);
+    });
+    const positiveIdDetails = props.ghosts.filter((ghost) => {
+        return props.positiveID === ghost.id
     });
 
-    const eliminatedCards = props.ghosts.filter((ghost) => {
-        return <GhostCard {...ghost} />
+    // Card Generators
+    const possibleCards = possibleDetails.filter((ghost) => {
+        return ghost
     });
-
-    const positiveIdCard = props.ghosts.filter((ghost) => {
-        return <GhostCard {...ghost} />
+    const eliminatedCards = eliminatedDetails.filter((ghost) => {
+        return ghost
     });
-
-    const ghostNotFound = (
-        <>
-            {possibleCards}
-            {eliminatedCards}
-        </>
-    )
+    const positiveIdCard = positiveIdDetails.filter((ghost) => {
+        return ghost
+    });
 
     return(
         <div className={"possibility-container"}>
             <h2>{props.message}</h2>
             <h3>(ghosts cannot be visually recognized)</h3>
-            {
-                props.positiveID || props.positiveID === 0
-                    ? positiveIdCard
-                    : ghostNotFound
-            }
+
+            <CardDisplay
+                possibleCards={possibleCards}
+                eliminatedCards={eliminatedCards}
+                positiveIdCard={positiveIdCard}
+            />
         </div>
     )
 }

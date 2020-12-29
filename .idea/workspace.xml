@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fc4c6c6-d286-4c09-a916-c9475d430cc7" name="Default Changelist" comment="Start refactor for ghost display">
+    <list default="true" id="2fc4c6c6-d286-4c09-a916-c9475d430cc7" name="Default Changelist" comment="Add better structure for ghostcard">
+      <change afterPath="$PROJECT_DIR$/src/components/GhostContainer/InnerComponents/CardDisplay/CardDisplay.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GhostContainer/GhostContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GhostContainer/GhostContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GhostContainer/InnerComponents/GhostCard/GhostCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GhostContainer/InnerComponents/GhostCard/GhostCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +129,8 @@
       <workItem from="1608823745972" duration="98000" />
       <workItem from="1608826845508" duration="267000" />
       <workItem from="1608828301151" duration="1287000" />
-      <workItem from="1609249125076" duration="1053000" />
+      <workItem from="1609249125076" duration="1325000" />
+      <workItem from="1609268744062" duration="2110000" />
     </task>
     <task id="LOCAL-00001" summary="Creating first structure">
       <created>1607815491323</created>
@@ -380,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609244815648</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Add better structure for ghostcard">
+      <created>1609250420630</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1609250420630</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +411,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add function to find common values between arrays" />
     <MESSAGE value="Add working outcomeChecker" />
     <MESSAGE value="Fix possibilities" />
     <MESSAGE value="Refactor outcomeChecker.js, fix event.target.values being cast as strings" />
@@ -425,6 +435,7 @@
     <MESSAGE value="Add SVG icons, gitignore" />
     <MESSAGE value="Add backbones for the layout update" />
     <MESSAGE value="Start refactor for ghost display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start refactor for ghost display" />
+    <MESSAGE value="Add better structure for ghostcard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add better structure for ghostcard" />
   </component>
 </project>
