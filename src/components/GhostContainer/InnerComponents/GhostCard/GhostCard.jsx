@@ -40,16 +40,37 @@ export default function GhostCard(props){
     ];
 
     const evidence = [
-        {emf},
-        {fingerprints},
-        {freezing},
-        {ghostOrb},
-        {ghostWriting},
-        {spiritBox}
+        {
+            id: 0,
+            icon: {emf}
+        },
+        {
+            id: 1,
+            icon: {fingerprints}
+        },
+        {
+            id: 2,
+            icon: {freezing}
+        },
+        {
+            id: 3,
+            icon: {ghostOrb}
+        },
+        {
+            id: 4,
+            icon: {ghostWriting}
+        },
+        {
+            id: 5,
+            icon: {spiritBox}
+        }
     ]
 
     const targetPicture = ghostPictures[props.ghostId];
     const targetSubstring = props.ghostType.toLowerCase();
+    const targetEvidence = evidence.map((evidence) => {
+        return props.evidence.includes(evidence.id) ? evidence.icon : null
+    })
 
     return(
         <div className={props.cardType}>
@@ -58,6 +79,9 @@ export default function GhostCard(props){
             </div>
             <div className={"ghost-picture"}>
                 <img src={targetPicture[targetSubstring]} />
+            </div>
+            <div className={"evidence-icon-row"}>
+                {targetEvidence}
             </div>
         </div>
     )

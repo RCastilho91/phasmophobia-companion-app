@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fc4c6c6-d286-4c09-a916-c9475d430cc7" name="Default Changelist" comment="Update README to reflect recent changes">
-      <change afterPath="$PROJECT_DIR$/src/components/ContactContainer/ContactContainer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContactContainer/ContactContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+    <list default="true" id="2fc4c6c6-d286-4c09-a916-c9475d430cc7" name="Default Changelist" comment="Start refactor for ghost display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GhostContainer/InnerComponents/GhostCard/GhostCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GhostContainer/InnerComponents/GhostCard/GhostCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,10 +11,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lZposdIVaSSaAY84BhUZj5g5Iz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -62,6 +66,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.outcomeChecker.js" />
         <item itemvalue="Node.js.outcomeChecker.js" />
       </list>
     </recent_temporary>
@@ -118,6 +123,10 @@
       <workItem from="1608742439903" duration="6000" />
       <workItem from="1608754469914" duration="2446000" />
       <workItem from="1608758052952" duration="1518000" />
+      <workItem from="1608823745972" duration="98000" />
+      <workItem from="1608826845508" duration="267000" />
+      <workItem from="1608828301151" duration="1287000" />
+      <workItem from="1609249125076" duration="1053000" />
     </task>
     <task id="LOCAL-00001" summary="Creating first structure">
       <created>1607815491323</created>
@@ -343,7 +352,35 @@
       <option name="project" value="LOCAL" />
       <updated>1608758342868</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Remove unused variables for unapplied features">
+      <created>1608823815296</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1608823815296</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add SVG icons, gitignore">
+      <created>1609242324781</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1609242324781</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add backbones for the layout update">
+      <created>1609243398664</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1609243398664</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Start refactor for ghost display">
+      <created>1609244815648</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1609244815648</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,10 +400,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Refactor positiveEvidence for readability" />
-    <MESSAGE value="Add logic to main app to separate possibilities, pending tests" />
-    <MESSAGE value="Refactor main App" />
-    <MESSAGE value="Create initial structure for auxiliary functions" />
     <MESSAGE value="Add function to find common values between arrays" />
     <MESSAGE value="Add working outcomeChecker" />
     <MESSAGE value="Fix possibilities" />
@@ -388,6 +421,10 @@
     <MESSAGE value="Add better version of found ghost container" />
     <MESSAGE value="Add favicons" />
     <MESSAGE value="Update README to reflect recent changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README to reflect recent changes" />
+    <MESSAGE value="Remove unused variables for unapplied features" />
+    <MESSAGE value="Add SVG icons, gitignore" />
+    <MESSAGE value="Add backbones for the layout update" />
+    <MESSAGE value="Start refactor for ghost display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start refactor for ghost display" />
   </component>
 </project>
