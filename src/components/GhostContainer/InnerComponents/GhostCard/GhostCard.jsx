@@ -15,6 +15,14 @@ import revenant from '../../../../images/ghosts/9.png';
 import shade from '../../../../images/ghosts/10.png';
 import yurei from '../../../../images/ghosts/11.png';
 
+// Evidence Icons
+import spiritBox from '../../../../images/evidence-icons/SVGs/spirit-box.svg';
+import ghostOrb from '../../../../images/evidence-icons/SVGs/ghost-orbs.svg';
+import ghostWriting from '../../../../images/evidence-icons/SVGs/ghost-writing.svg';
+import fingerprints from '../../../../images/evidence-icons/SVGs/fingerprints.svg';
+import freezing from '../../../../images/evidence-icons/SVGs/freezing-temperatures.svg';
+import emf from '../../../../images/evidence-icons/SVGs/emf.svg';
+
 export default function GhostCard(props){
     const ghostPictures = [
         {spirit},
@@ -30,6 +38,15 @@ export default function GhostCard(props){
         {shade},
         {yurei}
     ];
+
+    const evidence = [
+        {emf},
+        {fingerprints},
+        {freezing},
+        {ghostOrb},
+        {ghostWriting},
+        {spiritBox}
+    ]
 
     const targetPicture = ghostPictures[props.ghostId];
     const targetSubstring = props.ghostType.toLowerCase();
