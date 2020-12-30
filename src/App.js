@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
+
+// Analytics
+import ReactGA from 'react-ga';
+
+// Components
 import EvidenceContainer from "./components/EvidenceContainer/EvidenceContainer";
 import GhostContainer from "./components/GhostContainer/GhostContainer";
 import EvidenceTrigger from "./components/EvidenceTrigger/EvidenceTrigger";
 
 // Data
 import ghostData from './utils/data/ghostData.json';
+import googleId from "./utils/google-analytics-sensitive/gaConfiguration";
 
 // Auxiliary functions
 import fullOutput from './utils/auxiliaryFunctions/outcomeChecker';
@@ -30,7 +36,11 @@ function App() {
     const [messageToUser, setMessageToUser] = useState('');
 
     useEffect(() => {
+        ReactGA.initialize(googleId);
+        ReactGA.pageview('/');
+
         stateUpdater()
+
     }, [positiveEvidence, negativeEvidence]);
 
     const handlePositive = (event) => {
