@@ -48,12 +48,12 @@ export default function EvidenceIconRow(props){
         return evidence
     });
     const evidenceIcons = targetEvidence.map((svg) => {
-        return <img src={svg.icon[svg.targetName]} className={'card-icon'} alt={svg.targetName} />
+        return <embed src={svg.icon[svg.targetName]} className={'card-icon'} alt={svg.targetName} />
     });
 
     return(
         <div className={"evidence-icon-row"}>
-            <img src={ghostOrb} className={'card-icon'} alt={'ghostOrb'} />
+            {evidenceIcons}
         </div>
     )
 }

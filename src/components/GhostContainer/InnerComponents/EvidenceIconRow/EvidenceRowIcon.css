@@ -1,5 +1,16 @@
 .card-icon {
     z-index: 1;
-    display: inline !important;
+    display: inline-block;
     fill: #000000;
+    width: 25%;
+    height: 25%;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.evidence-icon-row {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 20px;
 }
